@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+  }
+  :root{
+    --one: hsl(31, 77%, 52%);
+    --two: hsl(184, 100%, 22%);
+    --three: hsl(179, 100%, 13%);
+  }
+body{
+    background: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+.container{
+    width: 90%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    /* margin: 100px; */
+}
+.first{
+    height: 100%;
+    width: 25%;
+    background-color: var(--one);
+    padding: 50px 50px;
+    position: relative;
+}
+.second{
+    height: 100%;
+    width: 25%;
+    background-color: var(--two);
+    padding: 50px 50px;
+    position: relative;
+}
+.third{
+    height: 100%;
+    width: 25%;
+    background-color: var(--three);
+    padding: 50px 50px;
+    position: relative;
+}
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    font-size: 30px;
+}
+p{
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    /* width: 250px; */
+}
+.btn {
+    border: 2px solid black;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px 50px;
+    font-family: 'Lexend Deca', sans-serif;
+    position: absolute;
+    bottom: 15%;
+  }
+  
+  /* Green */
+  .success {
+    border-color: hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+    background-color: var(--one);
+  }
+  
+  .success:hover {
+    background-color: hsl(0, 0%, 95%);
+    color: var(--one);
+  }
+  .failure {
+    border-color: hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+    background-color: var(--two);
+  }
+  
+  .failure:hover {
+    background-color: hsl(0, 0%, 95%);
+    color: var(--two);
+  }
+  .both {
+    border-color: hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+    background-color: var(--three);
+  }
+  
+  .both:hover {
+    background-color: hsl(0, 0%, 95%);
+    color: var(--three);
+  }
+@media (max-width: 600px) {
+  .container{
+        flex-direction: column;
+        align-items: center;
+        height: 950px;
+        width: 100%;
+  }
+  .first{
+    height: 75%;
+    width: 90%;
+    padding: 25px 25px;
+  }
+  .second{
+    height: 75%;
+    width: 90%;
+    padding: 25px 25px;
+  }
+  .third{
+    height: 75%;
+    width: 90%;
+    padding: 25px 25px;
+  }
+  .h1{
+    /* font-size: 20px; */
+    width: 10px;
+  }
+  .btn{
+    bottom: 2%;
+    padding: 7px 14px;
+    font-size: 8px;
+  }
+}
